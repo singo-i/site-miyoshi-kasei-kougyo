@@ -1,0 +1,15 @@
+{
+  "name": "site-miyoshi-kasei-kougyo",
+  "version": "1.0.0",
+  "description": "ミヨシ化成工業所のサイト",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass wp-content/themes/miyoshi-kasei-kougyo/sass:wp-content/themes/miyoshi-kasei-kougyo/ --style expanded --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

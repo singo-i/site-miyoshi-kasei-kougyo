@@ -48,3 +48,4 @@ wp-config.php
 #/wp-content/themes
 
 /wp-content/ai1wm-backups
+/node_modules
