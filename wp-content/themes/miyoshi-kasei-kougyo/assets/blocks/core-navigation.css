@@ -1,24 +1,17 @@
+@charset "UTF-8";
 /* Navigation */
-.wp-block-navigation
-  .has-child:not(.open-on-click):hover
-  > .wp-block-navigation__submenu-container {
+.wp-block-navigation .has-child:not(.open-on-click):hover > .wp-block-navigation__submenu-container {
   min-width: 240px;
 }
 
-ul.wp-block-navigation
-  .wp-block-navigation-item
-  .wp-block-navigation-item__content {
+ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
   color: var(--wp--preset--color--font);
   /* メニューのホバー時のスタイル */
 }
-ul.wp-block-navigation
-  .wp-block-navigation-item
-  .wp-block-navigation-item__content:hover {
+ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content:hover {
   text-decoration: none;
 }
-ul.wp-block-navigation
-  .wp-block-navigation-item
-  .wp-block-navigation-item__content::after {
+ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -30,9 +23,7 @@ ul.wp-block-navigation
   transform-origin: left;
   transition: transform 0.3s ease;
 }
-ul.wp-block-navigation
-  .wp-block-navigation-item
-  .wp-block-navigation-item__content:hover::after {
+ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content:hover::after {
   transform: scaleX(1);
 }
 
@@ -47,17 +38,11 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
   background: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--background);
 }
-ul.wp-block-navigation
-  > li:last-child
-  .wp-block-navigation-item__content
-  .wp-block-navigation-item__label {
+ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-block-navigation-item__label {
   display: flex;
   align-items: center;
 }
-ul.wp-block-navigation
-  > li:last-child
-  .wp-block-navigation-item__content
-  .wp-block-navigation-item__label::before {
+ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-block-navigation-item__label::before {
   content: "";
   display: block;
   width: 1.25rem;
@@ -70,22 +55,20 @@ ul.wp-block-navigation
 }
 
 /* ナビゲーションブロックをモバイルメニューに切り替えるブレークポイントを940pxに変更 */
-@media screen and (max-width: 939px) {
+@media (max-width: 939px) {
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
     display: block;
   }
   .wp-block-navigation__container {
     display: none;
   }
-  .wp-block-navigation__responsive-container.is-menu-open
-    .wp-block-navigation__container {
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
     display: flex;
     flex-direction: column;
   }
 }
-
 /* ブレークポイントより大きい場合（PC表示） */
-@media screen and (min-width: 940px) {
+@media (min-width: 940px) {
   .wp-block-navigation__responsive-container-open {
     display: none !important;
   }
@@ -94,7 +77,6 @@ ul.wp-block-navigation
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 940px) {
   ul.wp-block-navigation > li:first-child .wp-block-navigation-item__content {
     display: none;
@@ -107,9 +89,7 @@ ul.wp-block-navigation
     justify-content: center;
     transition: background-color 0.5s ease;
   }
-  ul.wp-block-navigation
-    > li:last-child
-    .wp-block-navigation-item__content:hover {
+  ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content:hover {
     background-color: var(--wp--preset--color--primary);
   }
 }
@@ -124,3 +104,5 @@ ul.wp-block-navigation
     border-bottom: 1px solid currentColor;
   }
 }
+
+/*# sourceMappingURL=core-navigation.css.map */
