@@ -6,6 +6,13 @@ Author URI:
 Description: ミヨシ化成工業所のテーマ
 */
 /* Header */
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9098039216);
+}
+
 .header--inner-group {
   height: clamp(3rem, 2rem + 3.333vw, 4rem);
 }
@@ -170,6 +177,7 @@ iframe {
 
 main {
   margin-block-start: 0;
+  padding-top: clamp(3rem, 2rem + 3.333vw, 4rem);
 }
 
 /*# sourceMappingURL=style.css.map */
