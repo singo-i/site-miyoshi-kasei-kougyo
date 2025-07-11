@@ -95,13 +95,13 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
 
   // お問い合わせボタンのスタイル
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
-    height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem);
+    height: clamp(3rem, 2rem + 3.333vw, 4rem);
     width: 180px;
     margin-right: calc(var(--wp--custom--gap) * -1);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 
     &:hover {
       background-color: var(--wp--preset--color--primary);
