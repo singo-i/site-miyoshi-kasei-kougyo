@@ -239,10 +239,10 @@
         },
         "spacing": {
           "padding": {
-            "bottom": "0.6rem",
+            "bottom": "0.5rem",
             "left": "1rem",
-            "right": "3rem",
-            "top": "0.6rem"
+            "right": "2.75rem",
+            "top": "0.5rem"
           }
         },
         "typography": {

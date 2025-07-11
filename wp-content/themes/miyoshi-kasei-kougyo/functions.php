@@ -58,6 +58,7 @@ if (! function_exists('miyoshi_kasei_kougyo_enqueue_block_styles')) :
 		// Add the block name (with namespace) for each style.
 		$blocks = array(
 			'core/navigation',
+			'core/button',
 		);
 
 		// Loop through each block and enqueue its styles.
