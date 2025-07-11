@@ -1,0 +1,19 @@
+/*
+Theme Name: miyoshi-kasei-kougyo
+Author: Iwasaki
+Author URI: 
+Description: ミヨシ化成工業所のテーマ
+*/
+
+@use "header";
+@use "navigation";
+@use "footer";
+
+/* Custom CSS */
+iframe {
+  max-width: 100%;
+}
+
+main {
+  margin-block-start: 0;
+}

@@ -1,0 +1,13 @@
+/* Header */
+header {
+  padding-left: var(--wp--custom--gap);
+  padding-right: var(--wp--custom--gap);
+}
+
+.header--inner-group {
+  height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem);
+}
+
+.wp-block-site-logo {
+  max-width: 50%;
+}

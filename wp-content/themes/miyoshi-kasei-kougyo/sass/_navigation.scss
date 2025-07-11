@@ -1,0 +1,125 @@
+/* Navigation */
+.wp-block-navigation
+  .has-child:not(.open-on-click):hover
+  > .wp-block-navigation__submenu-container {
+  min-width: 240px; // パソコンでのサブメニューの幅を広げる
+}
+
+ul.wp-block-navigation {
+  .wp-block-navigation-item {
+    .wp-block-navigation-item__content {
+      color: var(--wp--preset--color--font); // メニューの文字色
+
+      /* メニューのホバー時のスタイル */
+      &:hover {
+        text-decoration: none;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--wp--preset--color--primary);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
+  display: block;
+  background: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--background);
+
+  .wp-block-navigation-item__label {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2219%22%20height%3D%2219%22%20viewBox%3D%220%200%2019%2019%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M2.375%204.15625C2.04844%204.15625%201.78125%204.42344%201.78125%204.75V5.57012L8.18262%2010.8248C8.95078%2011.4557%2010.0529%2011.4557%2010.8211%2010.8248L17.2188%205.57012V4.75C17.2188%204.42344%2016.9516%204.15625%2016.625%204.15625H2.375ZM1.78125%207.87461V14.25C1.78125%2014.5766%202.04844%2014.8438%202.375%2014.8438H16.625C16.9516%2014.8438%2017.2188%2014.5766%2017.2188%2014.25V7.87461L11.9492%2012.2016C10.5242%2013.3705%208.47207%2013.3705%207.05078%2012.2016L1.78125%207.87461ZM0%204.75C0%203.44004%201.06504%202.375%202.375%202.375H16.625C17.935%202.375%2019%203.44004%2019%204.75V14.25C19%2015.56%2017.935%2016.625%2016.625%2016.625H2.375C1.06504%2016.625%200%2015.56%200%2014.25V4.75Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/* ナビゲーションブロックをモバイルメニューに切り替えるブレークポイントを940pxに変更 */
+@media (max-width: 939px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: block;
+  }
+
+  .wp-block-navigation__container {
+    display: none;
+  }
+
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ブレークポイントより大きい場合（PC表示） */
+@media (min-width: 940px) {
+  .wp-block-navigation__responsive-container-open {
+    display: none !important;
+  }
+
+  .wp-block-navigation__container {
+    display: flex !important;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  // HOMEボタンのスタイル
+  ul.wp-block-navigation > li:first-child .wp-block-navigation-item__content {
+    display: none; // PCでは非表示
+  }
+
+  // お問い合わせボタンのスタイル
+  ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
+    height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem);
+    width: 180px;
+    margin-right: calc(var(--wp--custom--gap) * -1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--wp--preset--color--primary);
+    }
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .wp-block-navigation {
+    li {
+      width: 100%;
+
+      .wp-block-navigation-item__content {
+        display: block;
+        width: 100%;
+        padding: 0.75rem !important;
+        border-bottom: 1px solid currentColor;
+      }
+    }
+  }
+}
