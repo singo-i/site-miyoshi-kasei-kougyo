@@ -6,16 +6,12 @@ Author URI:
 Description: ミヨシ化成工業所のテーマ
 */
 /* Header */
-header {
-  padding-left: var(--wp--custom--gap);
-  padding-right: var(--wp--custom--gap);
-}
-
 .header--inner-group {
   height: clamp(3rem, 2rem + 3.333vw, 4rem);
 }
 
 .wp-block-site-logo {
+  padding-left: var(--wp--custom--gap);
   max-width: 48%;
 }
 
@@ -47,6 +43,12 @@ ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__cont
   transform: scaleX(1);
 }
 
+/* モバイル版のナビゲーションの開くボタン */
+.wp-block-navigation__responsive-container-open {
+  padding-right: var(--wp--custom--gap);
+}
+
+/* ナビゲーションのお問い合わせボタンのスタイル */
 ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
   display: block;
   background: var(--wp--preset--color--secondary);
@@ -98,7 +100,6 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
     height: clamp(3rem, 2rem + 3.333vw, 4rem);
     width: 180px;
-    margin-right: calc(var(--wp--custom--gap) * -1);
     display: flex;
     align-items: center;
     justify-content: center;

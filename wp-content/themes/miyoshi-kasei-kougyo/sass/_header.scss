@@ -1,7 +1,5 @@
 /* Header */
 header {
-  padding-left: var(--wp--custom--gap);
-  padding-right: var(--wp--custom--gap);
 }
 
 .header--inner-group {
@@ -9,5 +7,6 @@ header {
 }
 
 .wp-block-site-logo {
+  padding-left: var(--wp--custom--gap);
   max-width: 48%;
 }

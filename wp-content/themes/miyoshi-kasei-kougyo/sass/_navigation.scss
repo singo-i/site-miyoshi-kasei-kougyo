@@ -35,6 +35,12 @@ ul.wp-block-navigation {
   }
 }
 
+/* モバイル版のナビゲーションの開くボタン */
+.wp-block-navigation__responsive-container-open {
+  padding-right: var(--wp--custom--gap);
+}
+
+/* ナビゲーションのお問い合わせボタンのスタイル */
 ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
   display: block;
   background: var(--wp--preset--color--secondary);
@@ -97,7 +103,6 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
     height: clamp(3rem, 2rem + 3.333vw, 4rem);
     width: 180px;
-    margin-right: calc(var(--wp--custom--gap) * -1);
     display: flex;
     align-items: center;
     justify-content: center;
