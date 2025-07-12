@@ -65,6 +65,32 @@ footer .copyright {
     justify-content: right;
   }
 }
+/* Homepage Styles */
+.home-main-visual-contact-button {
+  position: relative;
+}
+.home-main-visual-contact-button .wp-block-button__link {
+  height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem);
+  width: clamp(15rem, 11.25rem + 12.5vw, 18.75rem);
+  padding-left: clamp(1rem, 3.333vw, 2rem);
+  position: absolute;
+  top: calc(clamp(1.875rem, 1.25rem + 2.083vw, 2.5rem) * -1);
+  right: 0;
+  z-index: 1;
+}
+.home-main-visual-contact-button .wp-block-button__link::after {
+  right: clamp(1rem, 3.333vw, 2rem);
+}
+
+/* ホームページのメインビジュアルの下 */
+@media screen and (min-width: 782px) {
+  .homepage-under-main-visual .wp-block-columns {
+    column-gap: clamp(1rem, -12.18rem + 26.966vw, 4rem);
+  }
+  .homepage-under-main-visual .wp-block-column:first-child {
+    border-right: 1px solid var(--wp--preset--color--background);
+  }
+}
 /* Custom CSS */
 iframe {
   max-width: 100%;
