@@ -14,7 +14,8 @@ footer {
       background-color: var(--wp--preset--color--background);
       transform: scaleX(0);
       transform-origin: left;
-      transition: transform 0.3s ease;
+      transition: transform var(--wp--custom--transition--duration, 0.3s)
+        var(--wp--custom--transition--timing-function, ease);
     }
 
     &:hover::after {

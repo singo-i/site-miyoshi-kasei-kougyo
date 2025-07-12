@@ -21,7 +21,7 @@ ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__cont
   background-color: var(--wp--preset--color--primary);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform var(--wp--custom--transition--duration, 0.3s) var(--wp--custom--transition--timing-function, ease);
 }
 ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content:hover::after {
   transform: scaleX(1);
@@ -87,7 +87,7 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s var(--wp--custom--transition--timing-function, ease);
   }
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content:hover {
     background-color: var(--wp--preset--color--primary);

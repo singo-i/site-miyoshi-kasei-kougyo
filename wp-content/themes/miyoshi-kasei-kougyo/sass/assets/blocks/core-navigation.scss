@@ -25,7 +25,8 @@ ul.wp-block-navigation {
         background-color: var(--wp--preset--color--primary);
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 0.3s ease;
+        transition: transform var(--wp--custom--transition--duration, 0.3s)
+          var(--wp--custom--transition--timing-function, ease);
       }
 
       &:hover::after {
@@ -106,7 +107,8 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s
+      var(--wp--custom--transition--timing-function, ease);
 
     &:hover {
       background-color: var(--wp--preset--color--primary);
