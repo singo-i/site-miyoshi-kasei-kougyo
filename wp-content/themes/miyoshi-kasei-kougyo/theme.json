@@ -156,7 +156,11 @@
         "button": "0",
         "image": "0"
       },
-      "gap": "clamp(1rem, 3.333vw, 2rem)"
+      "gap": "clamp(1rem, 3.333vw, 2rem)",
+      "transition": {
+        "duration": "0.3s",
+        "timingFunction": "ease"
+      }
     }
   },
   "styles": {

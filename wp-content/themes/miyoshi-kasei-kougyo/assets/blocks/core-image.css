@@ -1,0 +1,23 @@
+/* Core Image Block Styles */
+.wp-block-image {
+  margin: 0 auto;
+  max-width: 100%;
+  display: block;
+}
+.wp-block-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--wp--custom--border-radius, 0);
+}
+
+main a .wp-block-image {
+  overflow: hidden;
+}
+main a .wp-block-image img {
+  transition: transform var(--wp--custom--transition--duration, 0.3s) var(--wp--custom--transition--timing-function, ease);
+}
+main a:hover .wp-block-image img {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=core-image.css.map */

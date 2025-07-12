@@ -1,0 +1,47 @@
+/* GenerateBlocks Plugin Custom Styles */
+.custom-link-block {
+  text-decoration: none;
+
+  .wp-block-group {
+    transition: background-color var(--wp--custom--transition--duration, 0.3s)
+      var(--wp--custom--transition--timing-function, ease);
+  }
+
+  p:last-child {
+    position: relative;
+    padding-right: 1.75rem;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("data:image/svg+xml,%0A%3Csvg%20width%3D%228%22%20height%3D%2213%22%20viewBox%3D%220%200%208%2013%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M6.96502%205.92612C7.27752%206.24351%207.27752%206.75894%206.96502%207.07632L2.96502%2011.1388C2.65252%2011.4562%202.14502%2011.4562%201.83252%2011.1388C1.52002%2010.8214%201.52002%2010.306%201.83252%209.98862L5.26752%206.49995L1.83502%203.01128C1.52252%202.6939%201.52252%202.17847%201.83502%201.86108C2.14752%201.5437%202.65502%201.5437%202.96752%201.86108L6.96752%205.92358L6.96502%205.92612Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: right 0.1s ease;
+    }
+  }
+
+  &:hover p:last-child {
+    &::after {
+      right: -0.25rem;
+    }
+  }
+}
+
+.custom-link-block:hover {
+  .wp-block-group {
+    background-color: var(--wp--preset--color--primary) !important;
+  }
+
+  .wp-block-group.has-background-color {
+    background-color: var(--wp--preset--color--secondary) !important;
+  }
+}

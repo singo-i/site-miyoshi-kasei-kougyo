@@ -59,6 +59,7 @@ if (! function_exists('miyoshi_kasei_kougyo_enqueue_block_styles')) :
 		$blocks = array(
 			'core/navigation',
 			'core/button',
+			'core/image',
 		);
 
 		// Loop through each block and enqueue its styles.
