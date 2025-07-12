@@ -162,8 +162,42 @@
   "styles": {
     "blocks": {
       "core/button": {
+        "color": {
+          "background": "var(--wp--preset--color--accent)",
+          "text": "var(--wp--preset--color--background)"
+        },
         "border": {
           "radius": "var(--wp--custom--radious--button)"
+        },
+        "spacing": {
+          "padding": {
+            "bottom": "0.5rem",
+            "left": "1rem",
+            "right": "2.75rem",
+            "top": "0.5rem"
+          }
+        },
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--medium)"
+        },
+        "variations": {
+          "outline": {
+            "color": {
+              "text": "var(--wp--preset--color--font)"
+            },
+            "spacing": {
+              "padding": {
+                "bottom": "0.5rem",
+                "left": "1rem",
+                "right": "2.75rem",
+                "top": "0.5rem"
+              }
+            },
+            "border": {
+              "width": "0",
+              "style": "none"
+            }
+          }
         }
       },
       "core/buttons": {
@@ -217,38 +251,6 @@
       "text": "var(--wp--preset--color--font)"
     },
     "elements": {
-      "button": {
-        ":focus": {
-          "color": {
-            "background": "color-mix(in srgb, var(--wp--preset--color--accent) 85%, transparent)",
-            "text": "var(--wp--preset--color--background)"
-          }
-        },
-        ":hover": {
-          "color": {
-            "background": "color-mix(in srgb, var(--wp--preset--color--accent) 85%, transparent)",
-            "text": "var(--wp--preset--color--background)"
-          }
-        },
-        "color": {
-          "background": "var(--wp--preset--color--accent)",
-          "text": "var(--wp--preset--color--background)"
-        },
-        "border": {
-          "radius": "var(--wp--custom--radious--button)"
-        },
-        "spacing": {
-          "padding": {
-            "bottom": "0.5rem",
-            "left": "1rem",
-            "right": "2.75rem",
-            "top": "0.5rem"
-          }
-        },
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)"
-        }
-      },
       "caption": {
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)",
