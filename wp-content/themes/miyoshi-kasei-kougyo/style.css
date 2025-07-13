@@ -129,6 +129,26 @@ footer .copyright {
     border-right: 1px solid var(--wp--preset--color--background);
   }
 }
+/* ホームページの事業のご案内 */
+.homepage-business-block-links > .wp-block-column {
+  display: flex;
+  flex-direction: column;
+}
+.homepage-business-block-links > .wp-block-column > a {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.homepage-business-block-links > .wp-block-column .wp-block-group {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.homepage-business-block-links > .wp-block-column .wp-block-group .has-text-align-right {
+  margin-right: 0 !important;
+}
+
 /* Custom CSS */
 iframe {
   max-width: 100%;
