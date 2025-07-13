@@ -74,19 +74,26 @@ footer .copyright {
   transition: background-color var(--wp--custom--transition--duration, 0.3s) var(--wp--custom--transition--timing-function, ease);
 }
 .custom-link-block .wp-block-image {
+  border-radius: var(--wp--custom--radious--image, 0);
+}
+.custom-link-block .wp-block-image:has(+ .wp-block-group.has-background-color) {
   border-radius: var(--wp--custom--radious--image, 0) var(--wp--custom--radious--image, 0) 0 0;
 }
 .custom-link-block .wp-block-group.has-background-color {
   border-radius: 0 0 var(--wp--custom--radious--button, 0) var(--wp--custom--radious--button, 0);
 }
-.custom-link-block p:last-child {
+.custom-link-block .wp-block-group.has-background-color p:last-of-type::after {
+  background-image: url("./assets/images/icon-angle-right-white.svg");
+}
+.custom-link-block p:last-of-type {
   position: relative;
   padding-right: 1.75rem;
+  display: inline-block;
 }
-.custom-link-block p:last-child::after {
+.custom-link-block p:last-of-type::after {
   content: "";
   display: block;
-  background-image: url("./assets/images/icon-angle-right-white.svg");
+  background-image: url("./assets/images/icon-angle-right.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -99,13 +106,10 @@ footer .copyright {
   margin: auto;
   transition: right 0.1s ease;
 }
-.custom-link-block:hover p:last-child::after {
+.custom-link-block:hover p:last-of-type::after {
   right: -0.25rem;
 }
 
-.custom-link-block:hover .wp-block-group {
-  background-color: var(--wp--preset--color--primary) !important;
-}
 .custom-link-block:hover .wp-block-group.has-background-color {
   background-color: var(--wp--preset--color--secondary) !important;
 }
