@@ -52,6 +52,7 @@ footer .copyright {
 @media screen and (max-width: 781px) {
   footer .footer-logo-area {
     border-bottom: 1px solid var(--wp--preset--color--background);
+    text-align: center;
   }
   footer .footer-navigation-area > div {
     flex-basis: 13rem;
