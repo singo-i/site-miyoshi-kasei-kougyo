@@ -58,3 +58,63 @@
     }
   }
 }
+
+/* ホームページの問い合わせのリンク */
+.homepage-big-contact-link {
+  > .wp-block-group {
+    border-radius: var(--wp--custom--radious--image, 0);
+    text-align: center;
+    transition: background-color var(--wp--custom--transition--duration, 0.3s)
+      var(--wp--custom--transition--timing-function, ease);
+  }
+
+  &:hover {
+    > .wp-block-group {
+      background-color: var(--wp--preset--color--secondary) !important;
+    }
+
+    .homepage-big-contact-link__text::after {
+      right: -2rem;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url("./assets/images/icon-envelope.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: -2.5rem;
+      position: absolute;
+      top: 2px;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("./assets/images/icon-angle-right-white.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 1em;
+      height: 1.25rem;
+      position: absolute;
+      right: -1.75rem;
+      top: 2px;
+      bottom: 0;
+      margin: auto;
+      transition: right 0.1s
+        var(--wp--custom--transition--timing-function, ease);
+    }
+  }
+}
