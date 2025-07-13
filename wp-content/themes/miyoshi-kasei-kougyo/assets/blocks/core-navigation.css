@@ -88,6 +88,10 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
     align-items: center;
     justify-content: center;
     transition: background-color 0.5s var(--wp--custom--transition--timing-function, ease);
+    border-radius: 0 0 0 var(--wp--custom--radious--image, 0);
+  }
+  ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content::after {
+    display: none;
   }
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content:hover {
     background-color: var(--wp--preset--color--primary);

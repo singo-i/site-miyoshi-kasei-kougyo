@@ -72,6 +72,12 @@ footer .copyright {
 .custom-link-block .wp-block-group {
   transition: background-color var(--wp--custom--transition--duration, 0.3s) var(--wp--custom--transition--timing-function, ease);
 }
+.custom-link-block .wp-block-image {
+  border-radius: var(--wp--custom--radious--image, 0) var(--wp--custom--radious--image, 0) 0 0;
+}
+.custom-link-block .wp-block-group.has-background-color {
+  border-radius: 0 0 var(--wp--custom--radious--button, 0) var(--wp--custom--radious--button, 0);
+}
 .custom-link-block p:last-child {
   position: relative;
   padding-right: 1.75rem;
@@ -108,6 +114,7 @@ footer .copyright {
   position: relative;
 }
 .home-main-visual-contact-button .wp-block-button__link {
+  border-radius: var(--wp--custom--radious--image, 0) 0 0 var(--wp--custom--radious--image, 0);
   height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem);
   width: clamp(15rem, 11.25rem + 12.5vw, 18.75rem);
   padding-left: clamp(1rem, 3.333vw, 2rem);
@@ -152,11 +159,16 @@ footer .copyright {
 /* Custom CSS */
 iframe {
   max-width: 100%;
+  border-radius: var(--wp--custom--radious--image, 0);
 }
 
 main {
   margin-block-start: 0;
   padding-top: clamp(3rem, 2rem + 3.333vw, 4rem);
+}
+
+:root :where(h1, h2, h3, h4, h5, h6, p) + p {
+  margin-block-start: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

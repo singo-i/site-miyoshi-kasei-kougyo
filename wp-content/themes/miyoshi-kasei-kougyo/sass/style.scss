@@ -13,9 +13,15 @@ Description: ミヨシ化成工業所のテーマ
 /* Custom CSS */
 iframe {
   max-width: 100%;
+  border-radius: var(--wp--custom--radious--image, 0);
 }
 
 main {
   margin-block-start: 0;
   padding-top: clamp(3rem, 2rem + 3.333vw, 4rem);
+}
+
+// デフォルトだとvar(--wp--custom--gap)が適用されるため
+:root :where(h1, h2, h3, h4, h5, h6, p) + p {
+  margin-block-start: 1rem;
 }

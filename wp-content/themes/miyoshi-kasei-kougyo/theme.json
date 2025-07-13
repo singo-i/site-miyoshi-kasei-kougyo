@@ -153,8 +153,8 @@
     "useRootPaddingAwareAlignments": true,
     "custom": {
       "radious": {
-        "button": "0",
-        "image": "0"
+        "button": "4px",
+        "image": "4px"
       },
       "gap": "clamp(1rem, 3.333vw, 2rem)",
       "transition": {

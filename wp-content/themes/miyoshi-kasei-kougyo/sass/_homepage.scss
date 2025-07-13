@@ -3,6 +3,8 @@
   position: relative;
 
   .wp-block-button__link {
+    border-radius: var(--wp--custom--radious--image, 0) 0 0
+      var(--wp--custom--radious--image, 0);
     height: clamp(3.75rem, 2.5rem + 4.167vw, 5rem); // 60px to 80px
     width: clamp(15rem, 11.25rem + 12.5vw, 18.75rem); // 240px to 300px
     padding-left: clamp(1rem, 3.333vw, 2rem);

@@ -7,6 +7,16 @@
       var(--wp--custom--transition--timing-function, ease);
   }
 
+  .wp-block-image {
+    border-radius: var(--wp--custom--radious--image, 0)
+      var(--wp--custom--radious--image, 0) 0 0;
+  }
+
+  .wp-block-group.has-background-color {
+    border-radius: 0 0 var(--wp--custom--radious--button, 0)
+      var(--wp--custom--radious--button, 0);
+  }
+
   p:last-child {
     position: relative;
     padding-right: 1.75rem;
