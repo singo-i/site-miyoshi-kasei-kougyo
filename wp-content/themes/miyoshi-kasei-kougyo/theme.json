@@ -141,10 +141,10 @@
         {
           "fluid": {
             "max": "2.25rem",
-            "min": "2rem"
+            "min": "1.75rem"
           },
           "name": "超特大",
-          "size": "2.125rem",
+          "size": "2rem",
           "slug": "xx-large"
         }
       ],
