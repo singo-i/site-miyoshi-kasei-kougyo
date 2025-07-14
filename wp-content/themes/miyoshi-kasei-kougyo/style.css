@@ -236,7 +236,7 @@ footer .copyright {
 
 /* Custom CSS */
 iframe {
-  max-width: 100%;
+  max-width: 100% !important;
   border-radius: var(--wp--custom--radious--image, 0);
 }
 
@@ -247,6 +247,18 @@ main {
 
 :root :where(h1, h2, h3, h4, h5, h6, p) + p {
   margin-block-start: 1rem;
+}
+
+@media (max-width: 781px) {
+  .reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse; /* 縦並びの順序を逆にする */
+  }
+}
+.wp-block-table th {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--background);
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
