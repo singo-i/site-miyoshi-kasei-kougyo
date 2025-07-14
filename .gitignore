@@ -48,4 +48,5 @@ wp-config.php
 #/wp-content/themes
 
 /wp-content/ai1wm-backups
+/wp-content/uploads-webpc
 /node_modules
