@@ -100,6 +100,9 @@ footer .copyright {
 .custom-link-block .wp-block-image:has(+ .wp-block-group.has-background-color) {
   border-radius: var(--wp--custom--radious--image, 0) var(--wp--custom--radious--image, 0) 0 0;
 }
+.custom-link-block .wp-block-image:has(+ .wp-block-group.has-background-color) img {
+  border-radius: var(--wp--custom--radious--image, 0) var(--wp--custom--radious--image, 0) 0 0;
+}
 .custom-link-block .wp-block-group.has-background-color {
   border-radius: 0 0 var(--wp--custom--radious--button, 0) var(--wp--custom--radious--button, 0);
 }
@@ -184,7 +187,7 @@ footer .copyright {
 
 /* ホームページの問い合わせのリンク */
 .homepage-big-contact-link > .wp-block-group {
-  border-radius: var(--wp--custom--radious--image, 0);
+  border-radius: var(--wp--custom--radious--button, 0);
   text-align: center;
   transition: background-color var(--wp--custom--transition--duration, 0.3s) var(--wp--custom--transition--timing-function, ease);
 }

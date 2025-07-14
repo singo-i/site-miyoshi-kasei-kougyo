@@ -62,7 +62,7 @@
 /* ホームページの問い合わせのリンク */
 .homepage-big-contact-link {
   > .wp-block-group {
-    border-radius: var(--wp--custom--radious--image, 0);
+    border-radius: var(--wp--custom--radious--button, 0);
     text-align: center;
     transition: background-color var(--wp--custom--transition--duration, 0.3s)
       var(--wp--custom--transition--timing-function, ease);
