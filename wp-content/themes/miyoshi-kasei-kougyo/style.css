@@ -22,6 +22,27 @@ header {
   max-width: 48%;
 }
 
+.page-title-block-cover {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  min-height: clamp(11.25rem, 8.75rem + 8.333vw, 13.75rem);
+}
+.page-title-block-cover .wp-block-cover__inner-container {
+  position: initial;
+}
+.page-title-block-cover h1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 footer a {
   text-decoration: none;
