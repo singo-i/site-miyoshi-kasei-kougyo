@@ -1,4 +1,16 @@
 /* Homepage Styles */
+body.home main {
+  padding-top: 0;
+}
+
+/* ホームページのメインビジュアルのタイトル文 */
+.homepage-main-visual-title > p {
+  padding: 0 0 0.1em 0.5em;
+  box-decoration-break: clone;
+  display: inline;
+}
+
+/* ホームページのメインビジュアルのボタン */
 .home-main-visual-contact-button {
   position: relative;
 
@@ -17,6 +29,10 @@
 
     &::after {
       right: clamp(1rem, 3.333vw, 2rem);
+    }
+
+    @media screen and (max-width: 781px) {
+      background-color: var(--wp--preset--color--secondary);
     }
   }
 }
