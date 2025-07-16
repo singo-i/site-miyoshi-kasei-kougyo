@@ -30,6 +30,9 @@
 }
 
 /* ボタンのアウトラインスタイル */
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--secondary) !important;
+}
 .wp-block-button.is-style-outline .wp-block-button__link::after {
   content: "";
   background-image: url("../images/icon-angle-right.svg");

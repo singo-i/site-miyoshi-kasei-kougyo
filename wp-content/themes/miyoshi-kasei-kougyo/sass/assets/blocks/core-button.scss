@@ -44,8 +44,7 @@
 .wp-block-button.is-style-outline {
   .wp-block-button__link {
     &:hover {
-      &::after {
-      }
+      background-color: var(--wp--preset--color--secondary) !important;
     }
 
     &::after {
