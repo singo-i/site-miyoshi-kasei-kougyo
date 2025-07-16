@@ -4,6 +4,9 @@
   min-width: 240px;
 }
 
+ul.wp-block-navigation .wp-block-navigation-item {
+  margin: 0;
+}
 ul.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
   color: var(--wp--preset--color--font);
   /* メニューのホバー時のスタイル */
@@ -88,7 +91,6 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
     align-items: center;
     justify-content: center;
     transition: background-color 0.5s var(--wp--custom--transition--timing-function, ease);
-    border-radius: 0 0 0 var(--wp--custom--radious--image, 0);
   }
   ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content::after {
     display: none;

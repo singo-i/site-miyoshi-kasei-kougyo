@@ -15,6 +15,7 @@ header {
 
 .header--inner-group {
   height: clamp(3rem, 2rem + 3.333vw, 4rem);
+  align-content: center;
 }
 
 .wp-block-site-logo {

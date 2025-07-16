@@ -7,6 +7,8 @@
 
 ul.wp-block-navigation {
   .wp-block-navigation-item {
+    margin: 0;
+
     .wp-block-navigation-item__content {
       color: var(--wp--preset--color--font); // メニューの文字色
 
@@ -109,7 +111,6 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content {
     justify-content: center;
     transition: background-color 0.5s
       var(--wp--custom--transition--timing-function, ease);
-    border-radius: 0 0 0 var(--wp--custom--radious--image, 0);
 
     &::after {
       display: none;
