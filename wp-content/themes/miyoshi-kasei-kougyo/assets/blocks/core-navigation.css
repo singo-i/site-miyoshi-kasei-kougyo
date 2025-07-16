@@ -100,6 +100,10 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
   }
 }
 @media screen and (max-width: 939px) {
+  .wp-block-navigation {
+    row-gap: 0 !important;
+    /* サブメニューのスタイル */
+  }
   .wp-block-navigation li {
     width: 100%;
   }
@@ -108,6 +112,19 @@ ul.wp-block-navigation > li:last-child .wp-block-navigation-item__content .wp-bl
     width: 100%;
     padding: 0.75rem !important;
     border-bottom: 1px solid currentColor;
+  }
+  .wp-block-navigation .wp-block-navigation__submenu-container {
+    margin-bottom: 1em;
+  }
+  .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    border-bottom: none;
+  }
+  .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__label::before {
+    content: "-";
+    position: relative;
+    left: -0.5em;
+    width: 1em;
+    height: 1em;
   }
 }
 
