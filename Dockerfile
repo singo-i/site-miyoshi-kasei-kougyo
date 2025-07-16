@@ -1,4 +1,4 @@
-FROM wordpress:6.5.5-php8.2-apache
+FROM wordpress:latest
 
 # Install Xdebug
 RUN pecl install xdebug && docker-php-ext-enable xdebug
