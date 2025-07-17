@@ -50,3 +50,7 @@ wp-config.php
 /wp-content/ai1wm-backups
 /wp-content/uploads-webpc
 /node_modules
+
+# help files
+/help.md
+/help.pdf
