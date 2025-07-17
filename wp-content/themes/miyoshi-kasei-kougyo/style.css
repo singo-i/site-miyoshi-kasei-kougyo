@@ -151,7 +151,7 @@ body.home main {
   display: inline;
 }
 
-/* ホームページのメインビジュアルのボタン */
+/* ホームページのメインビジュアルの問い合わせボタン */
 .home-main-visual-contact-button {
   position: relative;
 }
@@ -161,9 +161,13 @@ body.home main {
   width: clamp(15rem, 11.25rem + 12.5vw, 18.75rem);
   padding-left: clamp(1rem, 3.333vw, 2rem);
   position: absolute;
-  top: calc(clamp(1.875rem, 1.25rem + 2.083vw, 2.5rem) * -1);
+  top: 0;
+  bottom: 0;
   right: 0;
+  margin: auto;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
 .home-main-visual-contact-button .wp-block-button__link::after {
   right: clamp(1rem, 3.333vw, 2rem);
