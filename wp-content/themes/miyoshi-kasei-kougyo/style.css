@@ -150,6 +150,7 @@ body.home main {
 /* ホームページのメインビジュアルのタイトル文 */
 .homepage-main-visual-title > p {
   padding: 0 0 0.1em 0.5em;
+  -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   display: inline;
 }
